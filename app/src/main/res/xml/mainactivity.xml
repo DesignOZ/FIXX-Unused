@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/category1">
+        <Preference
+            android:key="easteregg"
+            android:summary="@string/caution_summary"
+            android:title="@string/caution" />
+
+        <!--<Preference-->
+        <!--android:key="calllog"-->
+        <!--android:summary=""-->
+        <!--android:title="@string/calllog" />-->
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/category2">
+
+        <Preference
+            android:key="number"
+            android:title="@string/sim_slots">
+
+        </Preference>
+
+        <Preference
+            android:key="fix"
+            android:summary="@string/calllog_summary"
+            android:title="@string/fix" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="서비스">
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="autofix"
+            android:summary="@string/auto_fix_summary"
+            android:title="@string/auto_fix" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/category3">
+        <Preference
+            android:key="incomingcall"
+            android:summary="@string/incomingcall_summary"
+            android:title="@string/incomingcall" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="Category_AD"
+        android:title="AD">
+        <com.tistory.overimagine.voltecalllogfix.Util.AdmobPreference android:key="AD" />
+    </PreferenceCategory>
+
+</PreferenceScreen>
